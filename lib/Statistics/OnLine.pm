@@ -8,7 +8,7 @@ package Statistics::OnLine;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub new {
   my $class = shift;
@@ -129,9 +129,9 @@ Statistics::OnLine - Pure Perl implementation of the on-line algorithm to produc
 
 =head1 DESCRIPTION
 
-This module implements a tool to perform statistic operations on large datasets which, tipically, could not fit the memory of the machine, e.g. a stream of data from the network.
+This module implements a tool to perform statistic operations on large datasets which, typically, could not fit the memory of the machine, e.g. a stream of data from the network.
 
-Once instantiated, an object of the class provide an C<add_data> method to add data to the dataset. When the computation of some statistics is required, at some point of the stream, the appropriate method can be called. After the execution of the statistics it is possible to contine to add new data. In turn, the object will continue to update the existing data to provide new statistics.
+Once instantiated, an object of the class provide an C<add_data> method to add data to the dataset. When the computation of some statistics is required, at some point of the stream, the appropriate method can be called. After the execution of the statistics it is possible to continue to add new data. In turn, the object will continue to update the existing data to provide new statistics.
 
 =head1 METHODS
 
@@ -222,6 +222,10 @@ The reason for this choice is that the module uses a stable approximation, well 
 =head1 HISTORY
 
 =over 4
+
+=item 0.02
+
+Corrected typos in documentation
 
 =item 0.01
 
